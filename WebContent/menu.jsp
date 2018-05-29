@@ -3,11 +3,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Menu</title>
 </head>
 <body>
 	<a href="faturamento-diario.jsp"> faturamento diario </a> <br/>
 	<a href="cadastro-atendimento.jsp">cadastro de atendimento</a> <br/>
+	<a href="cadastro-profissional.jsp">cadastro de profissional</a> <br/>
 	<a href="cadastro-agendamento.jsp">cadastro de agendamento</a> <br/>
 	<a href="cadastro-servico.jsp">cadastro de serviço</a> <br/>
 	<a href="listagem-de-servicos.jsp">listagem de servicos</a> <br/>

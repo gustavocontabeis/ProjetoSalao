@@ -20,6 +20,7 @@
 			<td>Valor</td>
 		</tr>
 		<% List<Servico> list = (List<Servico>) session.getAttribute("servicos"); 
+		if(list != null){
 		for(Object obj : list){
 			Servico servico = (Servico) obj; %>
 		<tr>
@@ -28,9 +29,10 @@
 			<td><%= servico.getTempo() %></td>
 			<td><%= servico.getValor() %></td>
 		</tr>
-		<% } %>
+		<% }
+		}%>
 	</table>
-	<input type="submit" name="acao" value="Pesquisar" />
+	<input type="submit" name="acao" value="Selecionar" />
 	</form>
 </body>
 </html>

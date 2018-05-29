@@ -66,6 +66,7 @@ public class CadastroServicoServlet extends HttpServlet {
 			if("Cadastrar".equals(acao)){
 				if(codigo != null && codigo != ""){
 					Integer codigoInt = new Integer(codigo);
+					
 					for(Servico servi :servicos){
 						if(servi.getCodigo().equals(codigoInt)){
 							servico = servi;
@@ -81,12 +82,22 @@ public class CadastroServicoServlet extends HttpServlet {
 					servicos.add(servico);
 				}
 			}
-			if("Pesquisar".equals(acao)){
-				servico = servicos.get(new Integer(index));
+			if("Selecionar".equals(acao)){
+				if(index != null && index != ""){
+					servico = servicos.get(new Integer(index));
+				}
 			}
 			if("Excluir".equals(acao)){
-				servico = servicos.get(new Integer(index));
-				servicos.remove(servico);
+				if(codigo!= null && codigo!= ""){
+					Integer codigoInt = new Integer(codigo);
+					for(Servico servi :servicos){
+						if(servi.getCodigo().equals(codigoInt)){
+							servico = servi;
+						}
+					}
+					servicos.remove(servico);
+					servico = new Servico();
+				}
 			}
 			if("Cancelar".equals(acao)){
 				response.setContentType("text/html");
