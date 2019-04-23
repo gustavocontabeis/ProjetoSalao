@@ -9,9 +9,9 @@
 <title>listagem de serviços</title>
 </head>
 <body>
-	<a href="/Projeto-Salao/menu.jsp">Menu</a>
+	<a href="${pageContext.request.contextPath}/menu.jsp">Menu</a>
 	<h1>listagem de serviços</h1>
-	<form action="/Projeto-Salao/CadastroServicoServlet" method="post">
+<form action="${pageContext.request.contextPath}/CadastroServicoServlet" method="post">
 	<table border="2" width="100%">
 		<tr>
 			<td></td>

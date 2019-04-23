@@ -7,7 +7,7 @@
 </head>
 <body>
 	<h3>Entrar no sistema</h3>
-	<form action="/Projeto-Salao/menu.jsp" method="get">
+	<form action="${pageContext.request.contextPath}/menu.jsp" method="get">
 	<dl>
 		<dt>Usuário</dt>
 		<dd>

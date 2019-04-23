@@ -6,7 +6,7 @@
 <title>Agendamento</title>
 </head>
 <body>
-	<a href="/Projeto-Salao/menu.jsp">Menu</a>
+	<a href="${pageContext.request.contextPath}/menu.jsp">Menu</a>
 	<h3>Agendamento</h3>
 
 	<dl>

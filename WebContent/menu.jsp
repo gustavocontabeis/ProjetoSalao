@@ -6,11 +6,14 @@
 <title>Menu</title>
 </head>
 <body>
-	<a href="faturamento-diario.jsp"> faturamento diario </a> <br/>
-	<a href="cadastro-atendimento.jsp">cadastro de atendimento</a> <br/>
-	<a href="cadastro-profissional.jsp">cadastro de profissional</a> <br/>
-	<a href="cadastro-agendamento.jsp">cadastro de agendamento</a> <br/>
-	<a href="cadastro-servico.jsp">cadastro de serviço</a> <br/>
-	<a href="listagem-de-servicos.jsp">listagem de servicos</a> <br/>
+	<a href="faturamento-diario.jsp"> Faturamento diário </a> <br/>
+	<a href="cadastro-atendimento.jsp">Cadastro de atendimento</a> <br/>
+	<a href="cadastro-profissional.jsp">Cadastro de profissional</a> <br/>
+	<a href="cadastro-cliente.jsp">Cadastro de clientes</a> <br/>
+	<a href="listagem-cliente.jsp">Listagem de clientes</a> <br/>
+	<a href="listagem-profissional.jsp">Listagem de profissionais</a> <br/>
+	<a href="cadastro-agendamento.jsp">Cadastro de agendamento</a> <br/>
+	<a href="cadastro-servico.jsp">Cadastro de serviço</a> <br/>
+	<a href="listagem-de-servicos.jsp">Listagem de serviços</a> <br/>
 </body>
 </html>

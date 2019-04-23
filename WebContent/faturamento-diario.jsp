@@ -6,7 +6,7 @@
 <title>faturamento diaro</title>
 </head>
 <body>
-	<a href="/Projeto-Salao/menu.jsp">Menu</a>
+	<a href="${pageContext.request.contextPath}/menu.jsp">Menu</a>
 	<h1>faturamento diaro</h1>
 	de:
 	<input value="08/04/2018" /> ate:

@@ -47,24 +47,24 @@ public class CadastroServicoServlet extends HttpServlet {
 		
 		//monta os objeto
 		Servico servico = new Servico();
-		if(codigo != null && codigo != ""){
+		if(codigo != null && !codigo.equals("")){
 			servico.setCodigo(new Integer(codigo));
 		}
 		servico.setNome(nome);
 		servico.setTempo(tempo);
-		if(valor != null && valor != ""){
+		if(valor != null && !valor.equals("")){
 			servico.setValor(new Float(valor));
 		}
 		
 		//valida os vobjetos
 		
 		//Executa as ações
-		if(acao != null && acao != ""){
+		if(acao != null && !acao.equals("")){
 			if("Novo".equals(acao)){
 				servico = new Servico();
 			}
 			if("Cadastrar".equals(acao)){
-				if(codigo != null && codigo != ""){
+				if(codigo != null && !codigo.equals("")){
 					Integer codigoInt = new Integer(codigo);
 					
 					for(Servico servi :servicos){
@@ -72,7 +72,7 @@ public class CadastroServicoServlet extends HttpServlet {
 							servico = servi;
 							servico.setNome(nome);
 							servico.setTempo(tempo);
-							if(valor != null && valor != ""){
+							if(valor != null && !valor.equals("")){
 								servico.setValor(new Float(valor));
 							}
 						}
@@ -83,12 +83,12 @@ public class CadastroServicoServlet extends HttpServlet {
 				}
 			}
 			if("Selecionar".equals(acao)){
-				if(index != null && index != ""){
+				if(index != null && !index.equals("")){
 					servico = servicos.get(new Integer(index));
 				}
 			}
 			if("Excluir".equals(acao)){
-				if(codigo!= null && codigo!= ""){
+				if(codigo!= null && !codigo.equals("")){
 					Integer codigoInt = new Integer(codigo);
 					for(Servico servi :servicos){
 						if(servi.getCodigo().equals(codigoInt)){

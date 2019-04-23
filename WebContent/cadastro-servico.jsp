@@ -4,12 +4,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
-<a href="/Projeto-Salao/menu.jsp">Menu</a>
+<a href="${pageContext.request.contextPath}/menu.jsp">Menu</a>
 <title>Cadastro de serviço</title>
 </head>
 <body>
 	<h3>Cadastro de serviço </h3>
-	<form action="/Projeto-Salao/CadastroServicoServlet" method="post">
+	<form action="${pageContext.request.contextPath}/CadastroServicoServlet" method="post">
 	<dl>
 		<dt>Código</dt>
 		<dd>
