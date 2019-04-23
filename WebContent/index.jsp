@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>InsSistema Flavi Viel Beauty Softert title here</title>
+<title>Flavi Viel Beauty Soft</title>
 </head>
 <body>
 	<h3>Sistema Flavi Viel Beauty Soft</h3>
